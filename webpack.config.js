@@ -4,7 +4,8 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
-
+const autoprefixer = require("autoprefixer");
+const webpack = require("webpack");
 module.exports = {
     entry: "./src/index.js",
     output: {
@@ -33,6 +34,13 @@ module.exports = {
             proxy: 'http://localhost:9000'
         }, {
             reload: false
+        }),
+        new webpack.LoaderOptionsPlugin({
+            options: {
+                postcss: [
+                    autoprefixer()
+                ]
+            }
         })
     ],
     module: {
@@ -41,7 +49,8 @@ module.exports = {
                 use: [
                     "style-loader",
                     "css-loader",
-                    "sass-loader"
+                    "sass-loader",
+                    "postcss-loader"
                 ]
             },
             {
