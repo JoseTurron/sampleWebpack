@@ -142,6 +142,17 @@ eval("module.exports = __webpack_require__.p + \"./assets/img/proba.png\";\n\n//
 
 /***/ }),
 
+/***/ "./src/assets/img/siedem.png":
+/*!***********************************!*\
+  !*** ./src/assets/img/siedem.png ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"./assets/img/siedem.png\";\n\n//# sourceURL=webpack:///./src/assets/img/siedem.png?");
+
+/***/ }),
+
 /***/ "./src/css/index.scss":
 /*!****************************!*\
   !*** ./src/css/index.scss ***!
@@ -161,7 +172,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dis
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum */ \"./src/sum.js\");\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sum__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/index.scss */ \"./src/css/index.scss\");\n/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_index_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/img/proba.png */ \"./src/assets/img/proba.png\");\n/* harmony import */ var _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__);\n\n\nconsole.log(\"Hello World\");\nconsole.log(Object(_sum__WEBPACK_IMPORTED_MODULE_0__[\"sum\"])(2, 4));\nvar heading = document.querySelector(\"#demo\"),\n    sumValue = Object(_sum__WEBPACK_IMPORTED_MODULE_0__[\"sum\"])(10, 5);\nheading.innerHTML = \"101 + 5 = \".concat(sumValue);\n\nvar myIcon = new Image();\nmyIcon.src = _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2___default.a;\ndocument.querySelector(\"div\").appendChild(myIcon);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum */ \"./src/sum.js\");\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sum__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/index.scss */ \"./src/css/index.scss\");\n/* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_index_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/img/proba.png */ \"./src/assets/img/proba.png\");\n/* harmony import */ var _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _assets_img_siedem_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/img/siedem.png */ \"./src/assets/img/siedem.png\");\n/* harmony import */ var _assets_img_siedem_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_img_siedem_png__WEBPACK_IMPORTED_MODULE_3__);\n\n\nconsole.log(\"Hello World\");\nconsole.log(Object(_sum__WEBPACK_IMPORTED_MODULE_0__[\"sum\"])(2, 4));\nvar heading = document.querySelector(\"#demo\"),\n    sumValue = Object(_sum__WEBPACK_IMPORTED_MODULE_0__[\"sum\"])(10, 5);\nheading.innerHTML = \"101 + 5 = \".concat(sumValue);\n\n\nvar myIcon = new Image();\nmyIcon.src = _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2___default.a;\ndocument.querySelector(\"div\").appendChild(myIcon);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

@@ -11,6 +11,7 @@ let heading = document.querySelector("#demo"),
 heading.innerHTML = `101 + 5 = ${sumValue}`;
 
 import Icon from "./assets/img/proba.png"
+import Icon2 from "./assets/img/siedem.png"
 
 let myIcon = new Image();
 myIcon.src = Icon;

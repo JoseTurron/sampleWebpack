@@ -6,11 +6,15 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 const webpack = require("webpack");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
-    entry: "./src/index.js",
+    entry: {
+        "index": "./src/index.js",
+    },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "[name].[contenthash].js"
+        filename: "[name].[contenthash].bundle.js"
     },
     devServer: {
         // contentBase: path.join(__dirname, "dist"),
@@ -19,7 +23,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/index.html"
+            template: "./src/index.html",
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/kontakt.html',
+            inject: true,
+            chunks: ['index'],
+            filename: 'kontakt.html'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
@@ -38,7 +48,7 @@ module.exports = {
         new webpack.LoaderOptionsPlugin({
             options: {
                 postcss: [
-                    autoprefixer()
+                    autoprefixer
                 ]
             }
         })
@@ -75,12 +85,16 @@ module.exports = {
             },
             {
                 test: /\.(html)$/,
-                use: ['html-loader']
+                use: ['html-loader'],
+                // use: [{
+                //     loader: 'html-loader',
+                //     options: {
+                //         name: "[name].[ext]",
+                //         outputPath: "./pages"
+                //     }
+                // }],
+                // exclude: path.resolve(__dirname, './src/index.html')
             }
-
         ]
-
-
     }
-
 }
